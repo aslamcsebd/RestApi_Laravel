@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "7e3e6b7c-d192-47e3-b4f5-5b8d66a0e55c",
+		"name": "laravel8api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/users/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				},
+				"description": "Get api for user collection"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "aslamf",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "asds@gmail.comd",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123321",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Aslam2",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/add-user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-user",
+						""
+					]
+				},
+				"description": "Post api method "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/add-multiple-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"users\": [\r\n        {\r\n            \"name\": \"Rsaippin\",\r\n            \"email\": \"tanasner@yahoo.com\",\r\n            \"password\": \"1as23\"\r\n        },\r\n        {\r\n            \"name\": \"Deiasgson Riasppin\",\r\n            \"email\": \"tagashnner@ayahoo.com\",\r\n            \"password\": \"3as21\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/add-multiple-user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-multiple-user",
+						""
+					]
+				},
+				"description": "Post api for multiple user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/update-user-details/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Aslam\",\r\n        \"password\": \"123\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update-user-details/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-user-details",
+						"5"
+					]
+				},
+				"description": "Put api for update user details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/update-single-record/1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"New name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update-single-record/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-single-record",
+						"5"
+					]
+				},
+				"description": "Patch api for update single record but put is better bcos patch can update multiple recore"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/delete-single-user/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete-single-user/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-single-user",
+						"5"
+					]
+				},
+				"description": "Delete api for delete single user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/delete-multiple-user/1,2,3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete-multiple-user/1,2,3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-multiple-user",
+						"1,2,3"
+					]
+				},
+				"description": "Delete api for delete multiple user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/delete-single-user-with-json",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete-single-user-with-json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-single-user-with-json"
+					]
+				},
+				"description": "Delete api for delete single user with josn"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/delete-multiple-user-with-json",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ids\" : [\r\n        {\r\n            \"id\":1\r\n        },\r\n        {\r\n            \"id\":2\r\n        },\r\n        {\r\n            \"id\":3\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete-multiple-user-with-json",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-multiple-user-with-json"
+					]
+				},
+				"description": "Delete api for delete multiple user with json"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user-delete-with-secure/216",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFzbGFtIiwiaWF0IjoxNTE2MjM5MDIyfQ.w02CUfQnOnoJ45iONY_fwY9BZfMMse_soOwigy8JBzA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user-delete-with-secure/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user-delete-with-secure",
+						"5"
+					]
+				},
+				"description": "Secure API with JWT"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register-user-using-passport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "aslam3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "asla22m3@gmail.com2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "321456987",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register-user-using-passport/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register-user-using-passport",
+						""
+					]
+				},
+				"description": "Register api using passport[register a user account]. Make a authentication."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login-user-using-passport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "c@gmail.com2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "321456987",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login-user-using-passport/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login-user-using-passport",
+						""
+					]
+				},
+				"description": "Login user using passport"
+			},
+			"response": []
+		}
+	]
+}
